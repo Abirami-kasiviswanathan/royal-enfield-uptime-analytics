@@ -102,11 +102,13 @@ st.markdown(f"""
 @st.cache_resource
 def get_connection():
     return psycopg2.connect(
-        dbname="postgres",
-        user="abiramikasiviswanathan"
+        host=st.secrets["postgres"]["host"],
+        dbname=st.secrets["postgres"]["database"],
+        user=st.secrets["postgres"]["user"],
+        password=st.secrets["postgres"]["password"],
+        port=st.secrets["postgres"]["port"],
+        sslmode="require"
     )
-
-conn = get_connection()
 
 # -----------------------------
 # read_view: one reusable function to query any view
