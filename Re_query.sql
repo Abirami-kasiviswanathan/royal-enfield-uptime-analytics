@@ -1,4 +1,4 @@
---om nama shivaya
+
 
 DROP VIEW IF EXISTS vw_connected_features_deep_dive;
 DROP VIEW IF EXISTS vw_aging_buckets;
