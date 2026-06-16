@@ -116,6 +116,9 @@ def get_connection():
 # returns a pandas DataFrame that each chart uses directly
 # -----------------------------
 def read_view(view_name, selected_region):
+    """Read one dashboard view for the selected region."""
+    conn = get_connection()
+
     return pd.read_sql_query(
         f"SELECT * FROM {view_name} WHERE region = %s;",
         conn,
