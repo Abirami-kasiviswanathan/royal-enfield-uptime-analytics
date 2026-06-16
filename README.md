@@ -1,7 +1,7 @@
 # Royal Enfield Uptime Centre Dashboard
 
 A mock service analytics dashboard for Royal Enfield-style Uptime Centre operations. The project uses PostgreSQL views for the analysis layer and Streamlit for the dashboard interface.
-view demo app - https://royal-enfield-uptime-analytics-yswkjwwtjscek9aftmnqjs.streamlit.app
+view app - https://royal-enfield-uptime-analytics-yswkjwwtjscek9aftmnqjs.streamlit.app
 
 ## Features
 
